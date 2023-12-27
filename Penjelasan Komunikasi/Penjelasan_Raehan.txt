@@ -1,0 +1,35 @@
+Terdapat tiga teknik komunikasi data yang dijelaskan pada Week 3 Online Learning Divisi Elektrik:
+
+1. Simplex
+Teknik komunikasi data ini hanya memungkinkan komunikasi data satu arah. Misal terdapat dua perangkat, satu perangkat akan bertindak sebagai pengirim data (transmitter) sedangkan perangkat lainnya sebagai penerima data (receiver). Contoh dari sistem komunikasi simplex adalah radio broadcast dan televisi.
+
+2. Half-Duplex
+Teknik komunikasi ini memungkinkan komunikasi dua arah secara "bergantian". Misal terdapat perangkat A dan B, kedua perangkat ini dapat bertindak sebagai transmitter atau receiver, namun tidak keduanya. Jika A bertindak sebagai transmitter, B bertindak sebagai receiver, begitu pula sebaliknya. Contoh dari sistem komunikasi Half-Duplex adalah walkie-Talkie.
+
+3. Full-Duplex
+Teknik Komunikasi ini memungkinkan komunikasi dua arah secara "bersamaan". Misal terdapat perangkat A dan B, kedua perangkat ini dapat bertindak sebagai transmitter dan receiver di saaat yang sama. Jika A mengirimkan data ke B, pada saat yang sama, B juga bisa mengirim data ke A. Contoh dari sistem komunikasi Full-Duplex adalah Telepon.
+
+Ada pula contoh teknik komunikasi lain:
+
+4. Multipoint 
+Teknik komunikasi data ini memungkinkan beberapa perangkat untuk terhubung ke satu saluran komunikasi. Contohnya adalah video conference dan chat room. Jika satu perangkat mengirim data pada saluran, maka semua perangkat lain yang terhubung pada saluran akan menerima pesan tersebut.
+
+5. Multiplexing 
+Teknik komunikasi data ini memungkinkan beberapa sinyal data untuk dikirimkan melalui satu saluran komunikasi. Contohnya adalah kabel televisi. multiplexing digunakan untuk menggabungkan banyak saluran audio dan video menjadi satu saluran siaran, sehingga dapat ditransmisikan melalui satu antena atau kabel. Dengan demikian, multiplexing memungkinkan penyiar untuk menyiarkan banyak saluran siaran melalui satu saluran komunikasi.
+
+Terdapat empat teknik komunikasi data yang dijelaskan pada Week 3 Online Learning Divisi Elektrik:
+
+1. SPI (Serial Peripheral Interface)
+Metode ini memungkinkan pengiriman data dalam kedua arah (full-duplex). Dalam sistem paling sederhana, terdapat satu perangkat yang bertindak sebagai master (umumnya merupakan mikrokontroller) dan satu perangkat lain yang bertindak sebagai slave (misalnya sebuah sensor). Kedua perangkat akan dilengkapi dengan 4 pin. terdapat 2 pin untuk mengirim dan menerima data antar perangkat. Ada pula satu pin SCLK (Clock) berfungsi men-setting clock dari master ke slave. Pin terakhir adalah pin SS/CS (Slave Select/Chipset Select) yang digunakan untuk memilih slave jika terdapat lebih dari satu slave.
+
+2. I2C (Inter-Integrated Circuit) 
+Metode ini memungkinkan transfer data dua arah (half-duplex) antara perangkat master dan perangkat pendukung. Bus I2C menggunakan dua kabel, yaitu SDA dan SCL. Kabel SDA (Serial Data) digunakan untuk mengirim dan menerima data antar perangkat, sedangkan kabel SCL (Serial Clock) berfungsi men-setting clock dari master ke slave. Dalam melakukan pengiriman data, pesan dimulai dengan bit start. Setelah itu terdapat address frame untuk menentukan slave yang dituju. Address Frame terdiri 7-10 digit angka yang unik untuk setiap perangkat sehingga master dapat mengakses slave yang berbeda-beda berdasarkan address framenya. Data dikirimkan dalam bentuk data frame. Proses ini diakhiri dengan bit stop.
+
+3. UART (Universal Asynchronous Receiver-Transmitter) 
+Metode ini memungkinkan pengiriman data dalam kedua arah (full-duplex) secara independen. Metode ini memungkinkan pengiriman data tanpa adanya sinyal sinkronisasi. Kecepatan dari pengiriman data juga dapat disesuaikan. Metode ini bekerja dengan cara mengirimkan data bit demi bit menggunakan jalur atau kabel. 
+
+4. CAN Bus (Controller Area Network Bus) 
+Metode ini memungkinkan pengiriman data dalam kedua arah (half-duplex/dull duplex). CAN Bus memungkinkan komunikasi mikrokontroller dan perangkat lain untuk berkomunikasi tanpa komputer host. CAN Bus bekerja seperti sedang melakukan panggilan konferensi, di mana setiap unit kontrol (ECU) akan mengirimkan semua data pada jaringan dan unit kontrol lain akan memilih data mana yang diperlukan.
+
+
+
